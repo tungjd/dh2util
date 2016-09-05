@@ -50,7 +50,7 @@ def getDegreesSuccess(statIndex):
     degrees = math.ceil(degrees) if degrees < 0 else math.floor(degrees)
     # [on_true] if [expression] else [on_false]
     print ('Rolled a ', result, '. My stat: ', statNames[statIndex], ':', statNums[statIndex])
-    print ('Roll against ', statNames[statIndex], ' succeeded ' if degrees < 0 else ' failed ', 'with ', math.fabs(degrees), ' degrees')
+    print ('Roll against ', statNames[statIndex], ' succeeded ' if degrees < 0 else ' failed ', 'with ', int(math.fabs(degrees)), ' degrees')
 
 readDH2File('samplechar.dh2')
 print(characterName)
